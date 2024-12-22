@@ -8,4 +8,5 @@ numpydoc>=1.8.0
 pillow>=9.4
 texext>=0.6.7
 myst-nb>=1.1
+matplotlib==3.10.0
 intersphinx_registry
