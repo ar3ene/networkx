@@ -67,6 +67,10 @@ except ImportError:
 
 # generate autosummary pages
 autosummary_generate = True
+autosummary_mock_imports = [
+    "networkx.algorithms.community.local",
+    "networkx.algorithms.approximation.density",
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -81,7 +85,13 @@ source_encoding = "utf-8"
 
 # Items to exclude during source collection, including release announcement
 # template, build outputs, and READMEs (markdown only)
-exclude_patterns = ["release/release_template.rst", "build/*", "README.md"]
+exclude_patterns = [
+    "release/release_template.rst", 
+    "build/*", 
+    "README.md",
+    "networkx.algorithms.community.local.rst",  # 排除 local 模块的文档
+    "networkx.algorithms.approximation.density.rst",  # 排除 density 模块的文档
+]
 
 # General substitutions.
 project = "NetworkX"
