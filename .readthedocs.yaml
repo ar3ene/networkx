@@ -33,5 +33,5 @@ formats:
 python:
   install:
     - requirements: requirements/doc.txt
-    - requirements: requirements/extra.txt
-    # - requirements: requirements/example.txt
+    # - requirements: requirements/extra.txt
+    - requirements: requirements/example.txt
